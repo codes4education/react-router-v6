@@ -5,6 +5,8 @@ import About from "./Component/About";
 import Navbar from "./Component/Navbar";
 import Service from "./Component/Service";
 import PageNotFound from "./Component/PageNotFound";
+import UserList from "./Component/UserList";
+import UserProfile from "./Component/UserProfile";
 function App() {
   return (
     <div className="App">
@@ -17,8 +19,8 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/service" element={<Service />} />
-
-          {/* <Route path="/*" element={<h1>404 Page Not Found</h1>} /> */}
+          <Route path="/user" element={<UserList />} />
+          <Route path="/user/:userId" element={<UserProfile />} />
           <Route path="/*" element={<PageNotFound />} />
         </Routes>
       </BrowserRouter>
