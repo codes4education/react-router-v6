@@ -10,37 +10,16 @@ function Navbar() {
         </div>
         <ul>
           <li>
-            <NavLink
-              to="/"
-              style={({ isActive }) => {
-                return { backgroundColor: isActive ? "green" : "transparent" };
-              }}
-            >
-              Home
-            </NavLink>
+            <NavLink to="/">Home</NavLink>
           </li>
           <li>
-            <NavLink
-              to="/about"
-              style={({ isActive }) => {
-                return { backgroundColor: isActive ? "yellow" : "transparent" };
-              }}
-            >
-              About
-            </NavLink>
+            <NavLink to="/about">About</NavLink>
           </li>
           <li>
-            <NavLink
-              to="/service"
-              style={({ isActive }) => {
-                return {
-                  backgroundColor: isActive ? "blue" : "transparent",
-                  color: "white",
-                };
-              }}
-            >
-              Service
-            </NavLink>
+            <NavLink to="/service">Service</NavLink>
+          </li>
+          <li>
+            <NavLink to="/geturl">URL Params</NavLink>
           </li>
         </ul>
       </nav>

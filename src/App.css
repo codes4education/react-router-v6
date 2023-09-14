@@ -29,7 +29,7 @@ nav ul li a {
 nav ul li a:hover {
   color: red;
 }
-/* nav ul li a.active {
+nav ul li a.active {
   font-weight: 600;
   color: red;
-} */
+}
