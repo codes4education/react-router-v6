@@ -4,9 +4,9 @@ import { useSearchParams } from "react-router-dom";
 function GetURLParams() {
   // Example 1
   const [searchParams, setSearchParams] = useSearchParams();
-  console.log(searchParams.get("name"));
-  console.log(searchParams.get("city"));
-  console.log(searchParams.get("country"));
+  // console.log(searchParams.get("name"));
+  // console.log(searchParams.get("city"));
+  // console.log(searchParams.get("country"));
 
   const name = searchParams.get("name");
   const city = searchParams.get("city");
