@@ -6,6 +6,9 @@ import Navbar from "./Component/Navbar";
 import Service from "./Component/Service";
 import PageNotFound from "./Component/PageNotFound";
 import GetURLParams from "./Component/GetURLParams";
+import Dashboard from "./Component/Dashboard";
+import Profile from "./Component/Profile";
+import Setting from "./Component/Setting";
 function App() {
   return (
     <div className="App">
@@ -17,6 +20,12 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/service" element={<Service />} />
           <Route path="/geturl" element={<GetURLParams />} />
+
+          <Route path="/dashboard/" element={<Dashboard />}>
+            <Route path="profile" element={<Profile />} />
+            <Route path="setting" element={<Setting />} />
+          </Route>
+
           <Route path="/*" element={<PageNotFound />} />
         </Routes>
       </BrowserRouter>

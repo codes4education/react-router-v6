@@ -21,6 +21,9 @@ function Navbar() {
           <li>
             <NavLink to="/geturl">URL Params</NavLink>
           </li>
+          <li>
+            <NavLink to="/dashboard">Dashboard</NavLink>
+          </li>
         </ul>
       </nav>
     </>
